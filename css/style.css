@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Island+Moments&family=Raleway:wght@300&display=swap');
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+body {
+    background-color: #EB8414;
+    margin: 0;
+}
+
+img {
+    filter: drop-shadow(2px 4px 6px black);
+    text-decoration: none;
+} 
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+ul {
+    float: right;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(71, 66, 66, 0.5);
+    display: inline-block;
+    width: 100%;
+}
+
+nav img {
+    height: 5.3rem;
+    filter: none;
+    float: left;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, .8);
+    color: #EB8414;
+    transition: 1.5s;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section {
+    margin: 0 40px;
+}
+
+section article {
+
+}
+
+.salmo {
+    background-image: url(../image/banner.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    color: #fff;
+    font-family: 'Island Moments', cursive;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+.salmo h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(71, 66, 66, 0.5);
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer p {
+    background-color: rgba(71, 66, 66, 0.5);
+    margin: 0;
+    padding: 1rem;
+} 
+
+footer small {
+    display: block;
+}
