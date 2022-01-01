@@ -1,15 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Island+Moments&family=Raleway:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Island+Moments&family=Raleway:wght@300&family=Vujahday+Script&display=swap');
+
 html {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
     background-color: #EB8414;
     margin: 0;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 2.2rem;
+    color: rgb(51, 48, 48);
 }
 
 img {
@@ -20,6 +26,10 @@ a {
     color: #fff;
     text-decoration: none;
     padding: 2rem;
+}
+
+h1, h2{
+    text-align: center;
 }
 
 ul {
@@ -39,28 +49,51 @@ header {
     background-color: rgba(71, 66, 66, 0.5);
     display: inline-block;
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 84px;
 }
 
 nav img {
-    height: 5.3rem;
+    height: 6.6rem;
     filter: none;
     float: left;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, .8);
+    
     color: #EB8414;
-    transition: 1.5s;
-    font-size: 2rem;
+    transition: 1s;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 section {
     margin: 0 40px;
+    overflow: hidden;
 }
 
-section article {
+.oracao, .buscar, .arrepender {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    border-bottom: solid rgba(71, 66, 66, 0.5);
+}
 
+.oracao p, .arrepender p {
+    margin-left: 2rem;
+}
+
+.buscar p {
+    margin-right: 2rem;
+}
+.cruz {
+    text-align: center;
 }
 
 .salmo {
@@ -77,6 +110,55 @@ section article {
     text-align: center;
 }
 
+/*Formulario*/
+.formulario {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#formulario-main {
+    box-sizing: border-box;
+    margin-left: 2.6rem;
+}
+form {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 38px;
+    margin: 0
+}
+
+.digite {
+    background-color: #EB8414;
+    width: 400px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+textarea {
+    background-color: #EB8414;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.digite:hover {
+    background-color: #fff;
+    transition: 1s;
+}
+
+textarea:hover {
+    background-color: #fff;
+    transition: 1s;
+}
 footer {
     background-color: rgba(71, 66, 66, 0.5);
     width: 100%;
@@ -93,4 +175,36 @@ footer p {
 
 footer small {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .oracao, .buscar, .arrepender  {
+        display: inline-block;
+    }
+    .oracao img, .arrepender img, .buscar img, .cruz img {
+        
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    form input[type="text"], form input[type="email"], form textarea {
+        width: 250px;
+    }
+    header img {
+        display: none;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+    }
+    .salmo p {
+        font-family: 'Vujahday Script', cursive;
+        font-size: 1.5rem;
+    }
+
 }
